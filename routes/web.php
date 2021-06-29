@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/event', function(){
     event(new TaskEvent('Hey how are you?!'));
 });
+Route::get('/listen', function(){
+    return view('listenBroadcast');
+});
